@@ -1,0 +1,69 @@
+.monitor, .online span, .offline  span{
+	position: absolute;
+}
+
+.monitor {
+    background-color: #ececec;
+    height: 20px;
+    width: 220px;
+    border: 1px solid #c2c2c2;
+}
+
+.monitor span {
+    display: inline-block;
+    height: 20px;
+    -moz-transition: width .4s ease-in-out;
+    -ms-transition: width .4s ease-in-out;
+    -o-transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
+}
+
+.online span {
+    background: #04b902;
+    background: -moz-linear-gradient(top, #7fe349, #04b902);
+    background: -webkit-gradient(linear, left top, left bottom, 
+                color-stop(0%,#7fe349), color-stop(100%,#04b902));
+    background: -webkit-linear-gradient(top, #7fe349, #04b902);
+    background: -o-linear-gradient(top, #7fe349, #04b902);
+    background: -ms-linear-gradient(top, #7fe349, #04b902);
+    background: linear-gradient(top, #7fe349, #04b902);
+}
+
+.offline span {
+    background: #ff6767;
+    background: -moz-linear-gradient(top, #ff6767, #bd0000);
+    background: -webkit-gradient(linear, left top, left bottom, 
+                color-stop(0%,#ff6767), color-stop(100%,#bd0000));
+    background: -webkit-linear-gradient(top, #ff6767, #bd0000);
+    background: -o-linear-gradient(top, #ff6767, #bd0000);
+    background: -ms-linear-gradient(top, #ff6767, #bd0000);
+    background: linear-gradient(top, #ff6767, #bd0000);
+}
+
+.caption{
+	position: relative;
+    font-family: 'MyriadProRegular', sans-serif;
+	text-align: center;
+	font-size: 15px;
+	margin-top: 2px;
+}
+
+.icon {
+	position: absolute;
+	margin: 4px 8px;
+	width: 13px;
+	height: 13px;
+	background: url('../img/ensemplix.png');
+}
+
+.icon.pick {
+	background-position: -2px -2px;
+} 
+
+.icon.sword {
+	background-position: -30px -2px;
+} 
+
+.icon.wrench {
+	background-position: -58px -2px;
+}
