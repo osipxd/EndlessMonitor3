@@ -1,7 +1,7 @@
 <?php
 /**
  * @package EndlessMonitor
- * @version 1.1.2
+ * @version 1.1.3
  * @author OsipXD 
  * @copyright (c) 2013, Osip Fatkullin. All Rights Reserved.
  * @link http://endlessworlds.ru/
@@ -66,6 +66,9 @@ class System
 
         // Create sql connection
         $sql = new SQL();
+
+        // Check for errors
+        if ($sql->isError()) die($sql->getError());
 
         // Get server status
         $res = MinecraftQurey::query($server['ip'], $server['port']);

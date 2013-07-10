@@ -12,7 +12,7 @@ defined('_EMINS') or die(' Direct access is denied! ');
 
 class Parts
 {   
-    private static $path = 'config.ini.php~tmp';
+    private static $path = 'config.ini.php~';
     
     public static function part1($data) {
         $part = array(
@@ -63,6 +63,19 @@ class Parts
         self::write($part, 3); 
     }
     
+    public static function delPart2() {
+        $file = file(self::$path);
+        
+        //$fileSize = sizeof($file); 
+        for ($i = sizeof($file); $i > 11; $i--) {
+            unset($file[$i]);
+        }
+        
+        $fp = fopen(self::$path, "w");
+        fputs($fp, implode("", $file));
+        fclose($fp);
+    }
+    
     public static function getMonType() {
         $file = fopen(self::$path, 'r');       
         $result = fgets($file, 999);       
@@ -81,7 +94,7 @@ class Parts
     }
     
     private static function write($strings, $partNum) {
-        
+                                                 
         if ($partNum == 1) $file = fopen(self::$path, 'w');
         else $file = fopen(self::$path, 'a');
         

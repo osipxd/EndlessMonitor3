@@ -9,6 +9,7 @@
  */
 
 defined('_EMINS') or die(' Direct access is denied! ');
+define('_EMRUN', true);
 
 $helpersPath = dirname(__FILE__) . DS;
 require_once($helpersPath . 'Parts.class.php');

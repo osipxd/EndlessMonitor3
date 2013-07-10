@@ -1,7 +1,7 @@
 <?php
 /**
 * @package EndlessMonitor
-* @version 1.1
+* @version 1.2
 * @author OsipXD 
 * @copyright (c) 2013, Osip Fatkullin. All Rights Reserved.
 * @link http://endlessworlds.ru/
@@ -20,7 +20,7 @@ class Config
      */
     public static function get($section)
     {
-        $file = file_exists('config.ini.php') ? 'config.ini.php' : 'installation/config.ini.php~tmp';
+        $file = file_exists('config.ini.php') ? 'config.ini.php' : 'config.ini.php~';
         if (!file_exists($file)) die (Lang::getLocaledString('CONFIG_NOT_FOUND_ERROR'));
 
         $config = parse_ini_file(ROOT . $file, true);

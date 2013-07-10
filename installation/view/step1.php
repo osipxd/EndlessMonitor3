@@ -1,7 +1,7 @@
 <?php 
 /**
  * @package EndlessMonitor
- * @version 1.0
+ * @version 1.1
  * @author OsipXD 
  * @copyright (c) 2013, Osip Fatkullin. All Rights Reserved.
  * @link http://endlessworlds.ru/
@@ -56,7 +56,7 @@ defined('_EMINS') or die(' Direct access is denied! ');
 				    </div>
                     <div class="f-actions">
                         <p class="f-buttons">
-                            <span class="f-bu" disabled>Назад</span>
+                            <span class="f-bu disabled">Назад</span>
                             <button type="submit" class="f-bu f-bu-success">Далее</button>
                         </p>
                     </div><!-- f-actions -->

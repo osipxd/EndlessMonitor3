@@ -15,12 +15,19 @@ class PrepareSQL
     /**
      * Create MySQL connection
      *
-     * $param   string  $type   Typo of request (table or server)
+     * $param   string  $type   Type of request (table or server)
      */
     public static function prepare($type, $serverId = null)
     {
+        global $error;
+        
         $sql = new SQL();
         $table = Config::get('mysql.table');
+
+        if ($sql->isError()) {
+            header ('Location: index.php?s=step2&er=1');
+            exit();
+        }
 
         if ($type == 'table'){
             $query = "CREATE TABLE IF NOT EXISTS `$table` (
@@ -36,7 +43,8 @@ class PrepareSQL
         $res = $sql->sendQuery($query);
 
         if ($res === false) {
-            include('../index.php?s=step2&er=1');
+            header ('Location: index.php?s=step2&er=1');
+            exit();
         }
     }
 }

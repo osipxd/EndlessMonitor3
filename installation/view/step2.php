@@ -1,7 +1,7 @@
 <?php 
 /**
  * @package EndlessMonitor
- * @version 1.0
+ * @version 1.1
  * @author OsipXD 
  * @copyright (c) 2013, Osip Fatkullin. All Rights Reserved.
  * @link http://endlessworlds.ru/
@@ -16,15 +16,15 @@ defined('_EMINS') or die(' Direct access is denied! ');
         <form id="sql_form" action="index.php?s=step3" method="POST">
             <fieldset>
                 <legend>Конфигурация базы данных - Шаг 2 из 3</legend>
-				<hr>
-                <?php if ($error === true) { ?>
+				<hr>         
+                <?php if (isset($error) && $error === true): ?>
                 <div class="f-row">
-                    <div class="f-message f-message-error g-3">
+                    <div class="f-message f-message-error g-5 cent">
                         <strong>Ошибка! </strong>
-                         Неверно указаны данные для подключения к базе данных
+                         Данные для подключения к БД указаны неверно
                     </div><!--f-message -->
                 </div>
-                <?php } ?>
+                <?php endif; ?>
                 <div class="f-row">
                     <label for="host">Сервер MySQL: <em>*</em></label>
                     <div class="f-input">

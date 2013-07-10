@@ -1,7 +1,7 @@
 <?php
 /**
  * @package EndlessMonitor
- * @version 1.1
+ * @version 1.1.2
  * @author OsipXD 
  * @copyright (c) 2013, Osip Fatkullin. All Rights Reserved.
  * @link http://endlessworlds.ru/
@@ -14,18 +14,19 @@ class SQL
 {
     
     /**
-     * MySQLi connection
-     * 
-     * @var mysqli
+     * @var mysqli  MySQLi connection
      */
     private $sql;
 
     /**
-     * Table with server data
-     * 
-     * @var string
+     * @var string  Table with server data
      */
     private $table;
+
+    /**
+     * @var string Errors
+     */
+    private $err;
 
     /**
      * Create MySQL connection
@@ -43,8 +44,8 @@ class SQL
         // Output error
         if ($this->sql->connect_error)
         {
-            die(Lang::getLocaledString('CONNECT_ERROR') . ' (' . $this->sql->connect_errno . ') '
-                . $this->sql->connect_error);
+            $this->err = Lang::getLocaledString('CONNECT_ERROR') . ' (' . $this->sql->connect_errno . ') '
+                . $this->sql->connect_error;
         }
     }
 
@@ -91,5 +92,23 @@ class SQL
 
         if (is_bool($res)) return $res;
         return $res->fetch_assoc();
+    }
+
+    /**
+     * Check for errors
+     *
+     * @return  bool    Return true if there are errors
+     */
+    public function isError() {
+        return isset($this->err);
+    }
+
+    /**
+     * Get error
+     *
+     * @return  mixed   Getter for `$err`
+     */
+    public function getError() {
+        return $this->err;
     }
 }

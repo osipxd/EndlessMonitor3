@@ -1,7 +1,7 @@
 <?php
 /**
  * @package EndlessMonitor
- * @version 1.0
+ * @version 1.0.1
  * @author OsipXD
  * @copyright (c) 2013, Osip Fatkullin. All Rights Reserved.
  * @link http://endlessworlds.ru/
@@ -12,6 +12,9 @@ define('_EMINS', true);
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', dirname(__FILE__) . DS);
 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 require_once(ROOT . 'helpers/include.php');
 defined('_IHINC') or die(' System files are missing! ');
 
@@ -19,14 +22,19 @@ if (!isset($_GET['s'])) $_GET['s'] = 'step1';
 
 $page = $_GET['s'] . '.php';
 
+
 if ($_GET['s'] == 'step2') {
-    Parts::part1($_POST);
-    $error = (isset($_POST['er'])) ? true : false;
+    if (isset($_GET['er'])) {
+        $error = true;
+        Parts::delPart2(); 
+    } else Parts::part1($_POST);   
 } else if ($_GET['s'] == 'step3') {
     Parts::part2($_POST);
+    PrepareSQL::prepare('table');
     $type = Parts::getMonType();
 } else if ($_GET['s'] == 'final') {
     Parts::part3($_POST);
+    PrepareSQL::prepare('server', $_POST['server']);
 }
 
 /** @noinspection PhpIncludeInspection */
