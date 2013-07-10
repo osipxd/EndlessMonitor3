@@ -1,7 +1,7 @@
 <?php
 /**
  * @package EndlessMonitor
- * @version 1.1.0
+ * @version 1.1
  * @author OsipXD 
  * @copyright (c) 2013, Osip Fatkullin. All Rights Reserved.
  * @link http://endlessworlds.ru/
@@ -32,11 +32,8 @@ class SQL
      */
     function __construct()
     {
-        // Get config
-        $config = new Config();
-        
         // Get settings from config for MySQL connection
-        $opt = $config->get('mysql');
+        $opt = Config::get('mysql');
         $this->table = $opt['table'];
 
         // Connect to MySQL
@@ -54,8 +51,8 @@ class SQL
     /**
      * Get server information from db
      * 
-     * @param   string  $server             - Server name on db
-     * @return  bool|mixed|mysqli_result    - Server online and server max online
+     * @param   string  $server Server name on db
+     * @return  bool|mixed      Server online and server max online
      */
     public function getServerInfo($server)
     {
@@ -69,9 +66,9 @@ class SQL
     /**
      * Set online value for server
      * 
-     * @param   string  $server     - Server name in db
-     * @param   string  $type       - Online or max online
-     * @param   int     $value      - Online value
+     * @param   string  $server     Server name in db
+     * @param   string  $type       Online or max online
+     * @param   int     $value      Online value
      */
     public function setOnline($server, $type, $value = -1)
     {
@@ -82,19 +79,17 @@ class SQL
 		$this->sendQuery($query);
 	}
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
     /**
      * Send MySQLi query and get result
      * 
-     * @param   string  $query              - Query
-     * @return  bool|mixed|mysqli_result    - Result of MySQLi query
+     * @param   string  $query  Query
+     * @return  bool|mixed      Result of MySQLi query
      */
-    private function sendQuery($query)
+    public function sendQuery($query)
     {
         $res = $this->sql->query($query);
 
-        if ($res === false) return $res;
+        if (is_bool($res)) return $res;
         return $res->fetch_assoc();
     }
 }

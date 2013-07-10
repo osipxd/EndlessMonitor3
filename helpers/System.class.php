@@ -13,11 +13,11 @@ defined('_EMRUN') or die(' Direct access is denied! ');
 class System
 {
     /**
-     * Get server status from db and repare 
+     * Get server status from db and prepare
      * for transmission to the template
      * 
-     * @param   string  $serverId   - Server ID in db
-     * @return  mixed               - Data for transmission to the template
+     * @param   string  $serverId   Server ID in db
+     * @return  mixed               Data for transmission to the template
      */
     public static function getInfo($serverId)
     {
@@ -51,7 +51,7 @@ class System
      * Receiving information from the server 
      * and recorded in the database
      * 
-     * @param   string  $serverId   - Server ID in db
+     * @param   string  $serverId   Server ID in db
      */
     public static function serverRequest($serverId)
     {
@@ -84,8 +84,8 @@ class System
     /**
      * Check the `serverId` for security
      * 
-     * @param   string  $serverId   - Server ID in db
-     * @return  string              - Checked ID
+     * @param   string  $serverId   Server ID in db
+     * @return  string              Checked ID
      */
     public static function secureId($serverId)
     {

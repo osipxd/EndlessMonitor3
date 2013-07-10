@@ -4,10 +4,17 @@
     <list default="true" id="bc49d690-6825-47d6-be38-913bd2aa24bd" name="Default" comment="" />
     <ignored path="EndlessMonitor3.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.php" changelist="bc49d690-6825-47d6-be38-913bd2aa24bd" time="1373386093953" ignored="false" />
-    <file path="/SQL.class.php" changelist="bc49d690-6825-47d6-be38-913bd2aa24bd" time="1373393968750" ignored="false" />
+    <file path="/index.php" changelist="bc49d690-6825-47d6-be38-913bd2aa24bd" time="1373415112921" ignored="false" />
+    <file path="/SQL.class.php" changelist="bc49d690-6825-47d6-be38-913bd2aa24bd" time="1373412250000" ignored="false" />
     <file path="/default.css" changelist="bc49d690-6825-47d6-be38-913bd2aa24bd" time="1373385960312" ignored="false" />
-    <file path="/a.dummy" changelist="bc49d690-6825-47d6-be38-913bd2aa24bd" time="1373388551468" ignored="false" />
+    <file path="/a.dummy" changelist="bc49d690-6825-47d6-be38-913bd2aa24bd" time="1373413992109" ignored="false" />
+    <file path="/CSQL.class.php" changelist="bc49d690-6825-47d6-be38-913bd2aa24bd" time="1373402945484" ignored="false" />
+    <file path="/Parts.class.php" changelist="bc49d690-6825-47d6-be38-913bd2aa24bd" time="1373410295156" ignored="false" />
+    <file path="/PrepareSQL.class.php" changelist="bc49d690-6825-47d6-be38-913bd2aa24bd" time="1373414466781" ignored="false" />
+    <file path="/Config.class.php" changelist="bc49d690-6825-47d6-be38-913bd2aa24bd" time="1373414216250" ignored="false" />
+    <file path="/Lang.class.php" changelist="bc49d690-6825-47d6-be38-913bd2aa24bd" time="1373412030750" ignored="false" />
+    <file path="/include.php" changelist="bc49d690-6825-47d6-be38-913bd2aa24bd" time="1373414257109" ignored="false" />
+    <file path="/step2.php" changelist="bc49d690-6825-47d6-be38-913bd2aa24bd" time="1373415445484" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,60 +39,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ensemplix.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tmpl/ensemplix.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="11" selection-start="582" selection-end="582" vertical-scroll-proportion="-10.461538">
-              <folding>
-                <element signature="e#6#194#0" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/installation/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="12" selection-start="481" selection-end="489" vertical-scroll-proportion="-13.076923">
-              <folding>
-                <element signature="e#6#191#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CSQL.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/installation/helpers/CSQL.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="41" selection-start="745" selection-end="764" vertical-scroll-proportion="-21.576923">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SQL.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helpers/SQL.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="26" selection-start="524" selection-end="524" vertical-scroll-proportion="-7.1923075">
-              <folding>
-                <element signature="e#6#194#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.class.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/helpers/Config.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="89" column="41" selection-start="2102" selection-end="2102" vertical-scroll-proportion="-53.615383">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="System.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/helpers/System.class.php">
+      <file leaf-file-name="Lang.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helpers/Lang.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="18" selection-start="555" selection-end="563" vertical-scroll-proportion="-10.461538">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MinecraftQuery.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helpers/MinecraftQuery.class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
@@ -93,10 +66,54 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/installation/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="-5.8846154">
+              <folding>
+                <element signature="e#6#191#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="step2.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/installation/view/step2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="22" selection-start="836" selection-end="836" vertical-scroll-proportion="-0.22743683">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrepareSQL.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/installation/helpers/PrepareSQL.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="0" selection-start="1075" selection-end="1075" vertical-scroll-proportion="-23.538462">
+              <folding>
+                <element signature="e#6#192#0" expanded="true" />
+                <marker date="1373415008703" expanded="true" signature="581:835" placeholder="CREATE TABLE.._table..." />
+                <marker date="1373415008703" expanded="true" signature="900:1007" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Parts.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/installation/helpers/Parts.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="19.615385">
+            <state line="11" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="12.5">
+              <folding>
+                <element signature="e#6#191#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helpers/Config.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="39" selection-start="481" selection-end="481" vertical-scroll-proportion="-8.5">
               <folding />
             </state>
           </provider>
@@ -112,22 +129,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/monitor.php" />
-        <option value="$PROJECT_DIR$/tmpl/default.php" />
-        <option value="$PROJECT_DIR$/helpers/MinecraftQuery.class.php" />
-        <option value="$PROJECT_DIR$/helpers/Lang.class.php" />
-        <option value="$PROJECT_DIR$/helpers/Config.class.php" />
-        <option value="$PROJECT_DIR$/helpers/System.class.php" />
-        <option value="$PROJECT_DIR$/installation/helpers/CSQL.class.php" />
-        <option value="$PROJECT_DIR$/installation/view/css/framework.css" />
-        <option value="$PROJECT_DIR$/tmpl/css/ensemplix.css" />
         <option value="$PROJECT_DIR$/tmpl/css/default.css" />
         <option value="$PROJECT_DIR$/installation/view/index.php" />
         <option value="$PROJECT_DIR$/launcher.php" />
         <option value="$PROJECT_DIR$/tmpl/ensemplix.php" />
+        <option value="$PROJECT_DIR$/helpers/System.class.php" />
         <option value="$PROJECT_DIR$/for_cron_only.sql" />
-        <option value="$PROJECT_DIR$/installation/index.php" />
+        <option value="$PROJECT_DIR$/installation/helpers/CSQL.class.php" />
+        <option value="$PROJECT_DIR$/monitor.php" />
+        <option value="$PROJECT_DIR$/helpers/Lang.class.php" />
         <option value="$PROJECT_DIR$/helpers/SQL.class.php" />
+        <option value="$PROJECT_DIR$/installation/helpers/Parts.class.php" />
+        <option value="$PROJECT_DIR$/helpers/Config.class.php" />
+        <option value="$PROJECT_DIR$/installation/helpers/include.php" />
+        <option value="$PROJECT_DIR$/installation/helpers/PrepareSQL.class.php" />
+        <option value="$PROJECT_DIR$/installation/index.php" />
+        <option value="$PROJECT_DIR$/installation/view/step2.php" />
       </list>
     </option>
   </component>
@@ -215,7 +232,57 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tmpl" />
+              <option name="myItemId" value="language" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EndlessMonitor3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EndlessMonitor3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="installation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EndlessMonitor3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EndlessMonitor3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="installation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EndlessMonitor3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EndlessMonitor3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="installation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -296,7 +363,7 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
     <option name="mySSHConnectionTimeout" value="30000" />
@@ -306,7 +373,6 @@
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
     <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
     <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="DETECT_NESTED_COPIES" value="true" />
     <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
@@ -326,25 +392,25 @@
     <frame x="0" y="0" width="1292" height="1036" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.60338986" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39909297" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25767368" sideWeight="0.67118645" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39661017" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39909297" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25767368" sideWeight="0.67118645" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39661017" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
@@ -411,126 +477,132 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/installation/view/index.php">
+    <entry file="file://$PROJECT_DIR$/helpers/System.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="533" selection-end="566" vertical-scroll-proportion="-11.115385">
-          <folding>
-            <element signature="e#6#192#0" expanded="true" />
-          </folding>
+        <state line="12" column="12" selection-start="265" selection-end="265" vertical-scroll-proportion="-3.2692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="59" selection-start="603" selection-end="603" vertical-scroll-proportion="-11.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cron.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/launcher.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="112" selection-end="112" vertical-scroll-proportion="0.17634855">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/for_cron_only.sql">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/tmpl/default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="45" selection-end="214" vertical-scroll-proportion="-1.2592592">
-          <folding />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1372284221546" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1372284221546" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1372284221546" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1372284221546" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1372284221546" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tmpl/ensemplix.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="11" selection-start="582" selection-end="582" vertical-scroll-proportion="-10.461538">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/include.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="38" selection-start="244" selection-end="282" vertical-scroll-proportion="0.25185186">
           <folding>
-            <element signature="e#6#194#0" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#6#185#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/installation/helpers/Parts.class.php">
+    <entry file="file://$PROJECT_DIR$/installation/helpers/include.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="19.615385">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helpers/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/installation/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/installation/helpers/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/installation/view/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/installation/view/img/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/installation/view/css/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/installation/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="12" selection-start="481" selection-end="489" vertical-scroll-proportion="-13.076923">
+        <state line="22" column="23" selection-start="615" selection-end="615" vertical-scroll-proportion="0.4617284">
           <folding>
             <element signature="e#6#191#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/installation/helpers/CSQL.class.php">
+    <entry file="file://$PROJECT_DIR$/installation/helpers/PrepareSQL.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="41" selection-start="745" selection-end="764" vertical-scroll-proportion="-21.576923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helpers/System.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helpers/SQL.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="26" selection-start="524" selection-end="524" vertical-scroll-proportion="-7.1923075">
+        <state line="36" column="0" selection-start="1075" selection-end="1075" vertical-scroll-proportion="-23.538462">
           <folding>
-            <element signature="e#6#194#0" expanded="true" />
+            <element signature="e#6#192#0" expanded="true" />
+            <marker date="1373415008703" expanded="true" signature="581:835" placeholder="CREATE TABLE.._table..." />
+            <marker date="1373415008703" expanded="true" signature="900:1007" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/installation/helpers/Parts.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="12.5">
+          <folding>
+            <element signature="e#6#191#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/helpers/Config.class.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="39" selection-start="481" selection-end="481" vertical-scroll-proportion="-8.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/MinecraftQuery.class.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/Lang.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="18" selection-start="555" selection-end="563" vertical-scroll-proportion="-10.461538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/installation/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="-5.8846154">
+          <folding>
+            <element signature="e#6#191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/SQL.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="41" selection-start="2102" selection-end="2102" vertical-scroll-proportion="-53.615383">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/installation/view/step2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="22" selection-start="836" selection-end="836" vertical-scroll-proportion="-0.22743683">
           <folding />
         </state>
       </provider>

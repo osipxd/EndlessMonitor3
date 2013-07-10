@@ -16,16 +16,12 @@ class Lang
     /**
      * Get localised string from index
      * 
-     * @param   mixed   $index  - String index in localisation file
-     * @return  string          - Localised string
+     * @param   mixed   $index  String index in localisation file
+     * @return  string          Localised string
      */
     public static function getLocaledString($index) {
-        
-        // Get config
-        $config = new Config();
-
         // Get localisation from config
-        $locale = $config->get('system.locale');
+        $locale = Config::get('system.locale');
 
         // Parse localisation file
         $file = parse_ini_file(ROOT . 'language' . DS . $locale . '.ini');

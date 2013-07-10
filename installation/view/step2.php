@@ -17,6 +17,14 @@ defined('_EMINS') or die(' Direct access is denied! ');
             <fieldset>
                 <legend>Конфигурация базы данных - Шаг 2 из 3</legend>
 				<hr>
+                <?php if ($error === true) { ?>
+                <div class="f-row">
+                    <div class="f-message f-message-error g-3">
+                        <strong>Ошибка! </strong>
+                         Неверно указаны данные для подключения к базе данных
+                    </div><!--f-message -->
+                </div>
+                <?php } ?>
                 <div class="f-row">
                     <label for="host">Сервер MySQL: <em>*</em></label>
                     <div class="f-input">

@@ -24,7 +24,5 @@ defined('_HINC') or die(' System files are missing! ');
 
 $info = System::getInfo(System::secureId($_GET['server']));
 
-$config = new Config();
-
 /** @noinspection PhpIncludeInspection */
-include(ROOT . 'tmpl/' . $config->get('system.template') . '.php');
+include(ROOT . 'tmpl/' . Config::get('system.template') . '.php');

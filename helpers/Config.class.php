@@ -1,7 +1,7 @@
 <?php
 /**
 * @package EndlessMonitor
-* @version 1.0.2
+* @version 1.1
 * @author OsipXD 
 * @copyright (c) 2013, Osip Fatkullin. All Rights Reserved.
 * @link http://endlessworlds.ru/
@@ -12,36 +12,22 @@ defined('_EMRUN') or die(' Direct access is denied! ');
 
 class Config
 {
-
-    /**
-     * Parsed config file
-     * 
-     * @var mixed
-     */
-    private $config;
-
-    /**
-     * Parse config file
-     * 
-     * @param   mixed   $file   - Path to config file (not required!)
-     * @return  Config 
-     */
-    function __construct($file = 'config.ini.php')
-    {
-        $this->config = parse_ini_file(ROOT . $file, true);
-    }
-
     /**
      * Get value from config
      * 
-     * @param   string  $section    - Config section (separator - "." point)
-     * @return  mixed               - Value from config
+     * @param   string  $section    Config section. Separator - "." (point)
+     * @return  mixed               Value from config
      */
-    public function get($section)
+    public static function get($section)
     {
+        $file = file_exists('config.ini.php') ? 'config.ini.php' : 'installation/config.ini.php~tmp';
+        if (!file_exists($file)) die (Lang::getLocaledString('CONFIG_NOT_FOUND_ERROR'));
+
+        $config = parse_ini_file(ROOT . $file, true);
+
         // Prepare section
-        $sections = $this->parse($section);    
-        $result = $this->config;
+        $sections = self::parse($section);
+        $result = $config;
         unset($section);
 
         // Get value from section
@@ -73,10 +59,10 @@ class Config
     /**
      * Splitting a string
      * 
-     * @param   mixed   $str    - String to splitting
-     * @return  array           - Divided string
+     * @param   mixed   $str    String to splitting
+     * @return  array           Divided string
      */
-    private function parse($str)
+    private static function parse($str)
     {
         $parts = explode('.', $str);
 

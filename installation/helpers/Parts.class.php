@@ -1,16 +1,16 @@
 <?php
 /**
-* @package EndlessMonitor
-* @version 1.2
-* @author OsipXD 
-* @copyright (c) 2013, Osip Fatkullin. All Rights Reserved.
-* @link http://endlessworlds.ru/
-* @license GNU/GPLv2
-*/
+ * @package EndlessMonitor
+ * @version 1.2
+ * @author OsipXD
+ * @copyright (c) 2013, Osip Fatkullin. All Rights Reserved.
+ * @link http://endlessworlds.ru/
+ * @license GNU/GPLv2
+ */
 
 defined('_EMINS') or die(' Direct access is denied! ');
 
-class CConfig
+class Parts
 {   
     private static $path = 'config.ini.php~tmp';
     
