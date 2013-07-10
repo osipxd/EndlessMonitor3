@@ -35,6 +35,10 @@ if ($_GET['s'] == 'step2') {
 } else if ($_GET['s'] == 'final') {
     Parts::part3($_POST);
     PrepareSQL::prepare('server', $_POST['server']);
+    $type = Parts::getMonType();
+    $serverId = $_POST['server'];
+    Parts::delMonType();
+    Parts::save();
 }
 
 /** @noinspection PhpIncludeInspection */

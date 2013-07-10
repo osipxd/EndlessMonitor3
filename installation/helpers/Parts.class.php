@@ -66,7 +66,6 @@ class Parts
     public static function delPart2() {
         $file = file(self::$path);
         
-        //$fileSize = sizeof($file); 
         for ($i = sizeof($file); $i > 11; $i--) {
             unset($file[$i]);
         }
@@ -91,6 +90,11 @@ class Parts
         $fp = fopen(self::$path, "w");
         fputs($fp, implode("", $file));
         fclose($fp);
+    }
+    
+    public static function save() {
+        copy($path, '../' . $path);
+        unlink($path);
     }
     
     private static function write($strings, $partNum) {

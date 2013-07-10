@@ -6,3 +6,7 @@
 .cent {
 	margin: 0 0 15px 20px;
 }
+
+p, h3 {
+	margin: 15px;
+}

@@ -281,13 +281,6 @@ h5,
 .h5 {
   font-size: 12px;
 }
-h1:first-child,
-h2:first-child,
-h3:first-child,
-h4:first-child,
-h5:first-child {
-  margin-top: 0;
-}
 abbr {
   border-bottom: 1px dotted #cccccc;
 }
@@ -339,8 +332,6 @@ q:after {
 pre,
 code,
 samp {
-  -moz-border-radius: 3px;
-  border-radius: 3px;
   background: #fdf6e3;
   border: 1px solid #fcf1d5;
 }
