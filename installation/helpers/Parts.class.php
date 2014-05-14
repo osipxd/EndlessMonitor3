@@ -93,8 +93,8 @@ class Parts {
     }
 
     public static function save() {
-        copy($path, '../' . $path);
-        unlink($path);
+        copy(self::$path, '../' . 'config.ini.php');
+        unlink(self::$path);
     }
 
     private static function write($strings, $partNum) {
