@@ -1,12 +1,12 @@
 .with-bg {
-	background: rgb(255, 255, 255);
-	border: solid 1px rgb(219, 219, 219);
+    background: rgb(255, 255, 255);
+    border: solid 1px rgb(219, 219, 219);
 }
 
 .cent {
-	margin: 0 0 15px 20px;
+    margin: 0 0 15px 20px;
 }
 
 p, h3 {
-	margin: 15px;
+    margin: 15px;
 }

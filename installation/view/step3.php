@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * @package EndlessMonitor
  * @version 1.1
@@ -7,9 +7,7 @@
  * @link http://endlessworlds.ru/
  * @license GNU/GPLv2
  */
- 
 defined('_EMINS') or die(' Direct access is denied! ');
- 
 ?>
 <section id="main" class="g-row">
     <div class="g-6 with-bg">
@@ -32,22 +30,22 @@ defined('_EMINS') or die(' Direct access is denied! ');
                         <p class="f-input-help g-3">Чаще всего используют название сервера</p>
                     </div><!-- f-input -->
                 </div><!-- f-row -->
-                <?php if ($type == "cron\r\n"): ?>
-                <div class="f-row">
-                    <label for="ip">IP адрес сервера:</label>
-                    <div class="f-input">
-                        <input name="ip" id="ip" type="text" class="g-3" required>
-                        <p class="f-input-help g-3">IP для подключения к черверу</p>
-                    </div><!-- f-input -->
-                </div><!-- f-row -->
-                <div class="f-row">
-                    <label for="port">Порт сервера:</label>
-                    <div class="f-input">
-                        <input name="port" id="port" type="text" class="g-3" required>
-                        <p class="f-input-help g-3">Порт для подключения к серверу</p>
-                    </div><!-- f-input -->
-                </div><!-- f-row -->
-                <?php endif; ?>
+<?php if ($type == "cron\r\n"): ?>
+                    <div class="f-row">
+                        <label for="ip">IP адрес сервера:</label>
+                        <div class="f-input">
+                            <input name="ip" id="ip" type="text" class="g-3" required>
+                            <p class="f-input-help g-3">IP для подключения к черверу</p>
+                        </div><!-- f-input -->
+                    </div><!-- f-row -->
+                    <div class="f-row">
+                        <label for="port">Порт сервера:</label>
+                        <div class="f-input">
+                            <input name="port" id="port" type="text" class="g-3" required>
+                            <p class="f-input-help g-3">Порт для подключения к серверу</p>
+                        </div><!-- f-input -->
+                    </div><!-- f-row -->
+<?php endif; ?>
                 <div class="f-actions">
                     <p class="f-buttons">
                         <a class="f-bu f-bu-default" href="index.php?s=step2">Назад</a>

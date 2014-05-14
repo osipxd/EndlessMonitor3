@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @package EndlessMonitor
  * @version 1.0
@@ -7,11 +8,9 @@
  * @link http://endlessworlds.ru/
  * @license GNU/GPLv2
  */
-
 defined('_EMRUN') or die(' Direct access is denied! ');
 
-class Lang
-{
+class Lang {
 
     /**
      * Get localised string from index

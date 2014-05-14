@@ -7,7 +7,6 @@
  * @link http://endlessworlds.ru/
  * @license GNU/GPLv2
  */
- 
 defined('_EMINS') or die(' Direct access is denied! ');
 ?>
 <!DOCTYPE html>
@@ -20,12 +19,12 @@ defined('_EMINS') or die(' Direct access is denied! ');
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link href="view/css/framework.css" rel="stylesheet">
         <link href="view/css/additions.css" rel="stylesheet">
-        
+
         <!--[if lt IE 9]>
             <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     </head>
-    
+
     <div class="g">
         <div class="f-nav-bar f-nav-bar-fixed">
             <div class="f-nav-bar-body">

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @package EndlessMonitor
  * @version 1.1.2
@@ -7,12 +8,10 @@
  * @link http://endlessworlds.ru/
  * @license GNU/GPLv2
  */
-
 defined('_EMRUN') or die(' Direct access is denied! ');
 
-class SQL
-{
-    
+class SQL {
+
     /**
      * @var mysqli  MySQLi connection
      */
@@ -31,8 +30,7 @@ class SQL
     /**
      * Create MySQL connection
      */
-    function __construct()
-    {
+    function __construct() {
         // Get settings from config for MySQL connection
         $opt = Config::get('mysql');
         $this->table = $opt['table'];
@@ -40,12 +38,10 @@ class SQL
         // Connect to MySQL
         @$this->sql = new mysqli($opt['host'], $opt['user'], $opt['pass'], $opt['db'], $opt['port']);
         unset($opt);
-        
+
         // Output error
-        if ($this->sql->connect_error)
-        {
-            $this->err = Lang::getLocaledString('CONNECT_ERROR') . ' (' . $this->sql->connect_errno . ') '
-                . $this->sql->connect_error;
+        if ($this->sql->connect_error) {
+            $this->err = Lang::getLocaledString('CONNECT_ERROR') . ' (' . $this->sql->connect_errno . ') ' . $this->sql->connect_error;
         }
     }
 
@@ -55,11 +51,8 @@ class SQL
      * @param   string  $server Server name on db
      * @return  bool|mixed      Server online and server max online
      */
-    public function getServerInfo($server)
-    {
-        $query = "SELECT * 
-                  FROM `$this->table`
-                  WHERE server = '$server'";
+    public function getServerInfo($server) {
+        $query = "SELECT * FROM `$this->table` WHERE server = '$server'";
 
         return $this->sendQuery($query);
     }
@@ -71,14 +64,11 @@ class SQL
      * @param   string  $type       Online or max online
      * @param   int     $value      Online value
      */
-    public function setOnline($server, $type, $value = -1)
-    {
-        $query = "UPDATE `$this->table`
-				  SET $type = $value
-				  WHERE server = '$server'";
+    public function setOnline($server, $type, $value = -1) {
+        $query = "UPDATE `$this->table` SET $type = $value WHERE server = '$server'";
 
-		$this->sendQuery($query);
-	}
+        $this->sendQuery($query);
+    }
 
     /**
      * Send MySQLi query and get result
@@ -86,11 +76,12 @@ class SQL
      * @param   string  $query  Query
      * @return  bool|mixed      Result of MySQLi query
      */
-    public function sendQuery($query)
-    {
+    public function sendQuery($query) {
         $res = $this->sql->query($query);
 
-        if (is_bool($res)) return $res;
+        if (is_bool($res)) {
+            return $res;
+        }
         return $res->fetch_assoc();
     }
 
@@ -111,4 +102,5 @@ class SQL
     public function getError() {
         return $this->err;
     }
+
 }
