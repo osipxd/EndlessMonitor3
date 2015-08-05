@@ -7,13 +7,14 @@
  * @link http://endlessworlds.ru/
  * @license GNU/GPLv2
  */
-
 defined('_EMRUN') or die(' Direct access is denied! ');
 
 $info['icon'] = (isset($_GET['icon'])) ? $_GET['icon'] : 'pick';
 $info['text'] = strtoupper($info['text']);
 
-if ($info['style'] == 'offline') $info['text'] = '';
+if ($info['style'] == 'offline') {
+    $info['text'] = '';
+}
 ?>
 
 <html>
@@ -24,9 +25,9 @@ if ($info['style'] == 'offline') $info['text'] = '';
 
     <div class="monitor <?php echo $info['style'] ?> stripes">
         <span style="width: <?php echo $info['percent'], '%'; ?>"></span>
-		<div class="icon <?php echo $info['icon']; ?>"></div>
+        <div class="icon <?php echo $info['icon']; ?>"></div>
         <div class="caption">
-			<?php echo $info['text'], ' ', $info['status'] ?>
+            <?php echo $info['text'], ' ', $info['status'] ?>
         </div>
     </div>
 </html>

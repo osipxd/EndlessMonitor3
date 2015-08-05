@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * @package EndlessMonitor
  * @version 1.1
@@ -7,24 +7,22 @@
  * @link http://endlessworlds.ru/
  * @license GNU/GPLv2
  */
- 
 defined('_EMINS') or die(' Direct access is denied! ');
- 
 ?>
 <section id="main" class="g-row">
     <div class="g-6 with-bg">
         <form id="sql_form" action="index.php?s=step3" method="POST">
             <fieldset>
                 <legend>Конфигурация базы данных - Шаг 2 из 3</legend>
-				<hr>         
-                <?php if (isset($error) && $error === true): ?>
-                <div class="f-row">
-                    <div class="f-message f-message-error g-5 cent">
-                        <strong>Ошибка! </strong>
-                         Данные для подключения к БД указаны неверно
-                    </div><!--f-message -->
-                </div>
-                <?php endif; ?>
+                <hr>         
+<?php if (isset($error) && $error === true): ?>
+                    <div class="f-row">
+                        <div class="f-message f-message-error g-5 cent">
+                            <strong>Ошибка! </strong>
+                            Данные для подключения к БД указаны неверно
+                        </div><!--f-message -->
+                    </div>
+<?php endif; ?>
                 <div class="f-row">
                     <label for="host">Сервер MySQL: <em>*</em></label>
                     <div class="f-input">

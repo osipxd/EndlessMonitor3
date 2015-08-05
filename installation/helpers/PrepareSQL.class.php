@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @package EndlessMonitor
  * @version 1.0
@@ -7,29 +8,27 @@
  * @link http://endlessworlds.ru/
  * @license GNU/GPLv2
  */
-
 defined('_EMINS') or die(' Direct access is denied! ');
 
-class PrepareSQL
-{
+class PrepareSQL {
+
     /**
      * Create MySQL connection
      *
      * $param   string  $type   Type of request (table or server)
      */
-    public static function prepare($type, $serverId = null)
-    {
+    public static function prepare($type, $serverId = null) {
         global $error;
-        
+
         $sql = new SQL();
         $table = Config::get('mysql.table');
 
         if ($sql->isError()) {
-            header ('Location: index.php?s=step2&er=1');
+            header('Location: index.php?s=step2&er=1');
             exit();
         }
 
-        if ($type == 'table'){
+        if ($type == 'table') {
             $query = "CREATE TABLE IF NOT EXISTS `$table` (
                           `server` varchar(20) DEFAULT NULL,
                           `online` int(3) NOT NULL DEFAULT '-1',
@@ -38,13 +37,16 @@ class PrepareSQL
         } else if (isset($serverId)) {
             $query = "INSERT INTO `$table` (`server`, `online`, `max_online`)
                       VALUES ('$serverId', -1, 100);";
-        } else return;
+        } else {
+            return;
+        }
 
         $res = $sql->sendQuery($query);
 
         if ($res === false) {
-            header ('Location: index.php?s=step2&er=1');
+            header('Location: index.php?s=step2&er=1');
             exit();
         }
     }
+
 }

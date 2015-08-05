@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * @package EndlessMonitor
  * @version 1.1
@@ -7,9 +7,7 @@
  * @link http://endlessworlds.ru/
  * @license GNU/GPLv2
  */
- 
 defined('_EMINS') or die(' Direct access is denied! ');
- 
 ?>
 <section id="main" class="g-row">
     <div class="g-row">
@@ -17,18 +15,18 @@ defined('_EMINS') or die(' Direct access is denied! ');
             <form id="system_form" action="index.php?s=step2" method="POST">
                 <fieldset>
                     <legend>Добро пожаловать! - Шаг 1 из 3</legend>
-				    <p class=cent>Следуйте инструкциям инсталлятора и будет вам счастье.</p>
+                    <p class=cent>Следуйте инструкциям инсталлятора и будет вам счастье.</p>
                     <hr>
                     <div class="f-row">
-				        <label>Способ работы:</label>
+                        <label>Способ работы:</label>
                         <div class="f-input">
-					        <label class="f-radio">
-						        <input name="type" id="type" type="radio" value="plugin" checked="true"> Плагин
-						    </label>
                             <label class="f-radio">
-						        <input name="type" id="type" type="radio" value="cron"> Крон
+                                <input name="type" id="type" type="radio" value="plugin" checked="true"> Плагин
                             </label>
-					    </div>
+                            <label class="f-radio">
+                                <input name="type" id="type" type="radio" value="cron"> Крон
+                            </label>
+                        </div>
                     </div><!-- f-row -->
                     <div class="f-row">
                         <label for="lang">Язык:</label>
@@ -37,23 +35,23 @@ defined('_EMINS') or die(' Direct access is denied! ');
                             <p class="f-input-help g-3">Файл локализации можно найти в папке <i>/languages/язык.ini</i></p>
                         </div><!-- f-input -->
                     </div><!-- f-row -->
-				    <div class="f-row">
+                    <div class="f-row">
                         <label for="tmpl">Шаблон:</label>
                         <div class="f-input">
                             <input name="tmpl" id="tmpl" type="text" class="g-3" value="default" required>
                             <p class="f-input-help g-3">Шаблон нужно распаковать в папку <i>tmpl</i></p>
                         </div><!-- f-input -->
                     </div><!-- f-row -->
-				    <div class="f-row">
-				        <label for="view_type">Тип отображения:</label>
-					    <div class="f-input">
-					        <select name="view_type" id="view_type" class="g-3">
-						        <option value="1">Проценты</option>
-							    <option value="2">Онлайн/Максимум</option>
-							    <option value="3">Только онлайн</option>
-						    </select>
-					    </div><!-- f-input -->
-				    </div>
+                    <div class="f-row">
+                        <label for="view_type">Тип отображения:</label>
+                        <div class="f-input">
+                            <select name="view_type" id="view_type" class="g-3">
+                                <option value="1">Проценты</option>
+                                <option value="2">Онлайн/Максимум</option>
+                                <option value="3">Только онлайн</option>
+                            </select>
+                        </div><!-- f-input -->
+                    </div>
                     <div class="f-actions">
                         <p class="f-buttons">
                             <span class="f-bu disabled">Назад</span>

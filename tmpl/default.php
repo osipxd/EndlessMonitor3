@@ -7,9 +7,7 @@
  * @link http://endlessworlds.ru/
  * @license GNU/GPLv2
  */
-
 defined('_EMRUN') or die(' Direct access is denied! ');
-
 ?>
 
 <html>

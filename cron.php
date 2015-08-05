@@ -8,7 +8,9 @@
 * @license GNU/GPLv2
 */
 
-if (empty($_GET['server']) && empty($argv[1])) die(' Empty params! ');
+if (empty($_GET['server']) && empty($argv[1])) {
+    die(' Empty params! ');
+}
 
 define('_EMRUN', true);
 define('DS', DIRECTORY_SEPARATOR);

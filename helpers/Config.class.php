@@ -10,18 +10,18 @@
 
 defined('_EMRUN') or die(' Direct access is denied! ');
 
-class Config
-{
+class Config {
     /**
      * Get value from config
      * 
      * @param   string  $section    Config section. Separator - "." (point)
      * @return  mixed               Value from config
      */
-    public static function get($section)
-    {
+    public static function get($section) {
         $file = file_exists('config.ini.php') ? 'config.ini.php' : 'config.ini.php~';
-        if (!file_exists($file)) die (Lang::getLocaledString('CONFIG_NOT_FOUND_ERROR'));
+        if (!file_exists($file)) {
+            die(Lang::getLocaledString('CONFIG_NOT_FOUND_ERROR'));
+        }
 
         $config = parse_ini_file(ROOT . $file, true);
 
@@ -41,7 +41,9 @@ class Config
             unset($result);
             
             // Check valid server info
-            if ($info[0] == null || $info[0] == '') die(Lang::getLocaledString('INVALID_PARAMS_ERROR')); 
+            if ($info[0] == null || $info[0] == '') {
+                die(Lang::getLocaledString('INVALID_PARAMS_ERROR'));
+            }
             $result['text'] = $info[0];
             
             // Write ip and port to result if defined
@@ -62,8 +64,7 @@ class Config
      * @param   mixed   $str    String to splitting
      * @return  array           Divided string
      */
-    private static function parse($str)
-    {
+    private static function parse($str) {
         $parts = explode('.', $str);
 
         return $parts;
