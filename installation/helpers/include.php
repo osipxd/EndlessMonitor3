@@ -15,7 +15,7 @@ $helpersPath = dirname(__FILE__) . DS;
 require_once($helpersPath . 'Parts.class.php');
 require_once($helpersPath . 'PrepareSQL.class.php');
 
-$helpersPath = ROOT . '../helpers/';
+$helpersPath = ROOT . 'helpers/';
 require_once($helpersPath . 'Config.class.php');
 require_once($helpersPath . 'SQL.class.php');
 require_once($helpersPath . 'Lang.class.php');

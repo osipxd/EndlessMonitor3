@@ -10,12 +10,13 @@
 
 define('_EMINS', true);
 define('DS', DIRECTORY_SEPARATOR);
-define('ROOT', dirname(__FILE__) . DS);
+define('INSTALL', dirname(__FILE__) . DS);
+define('ROOT', INSTALL . '..' . DS);
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-require_once(ROOT . 'helpers/include.php');
+require_once(INSTALL . 'helpers/include.php');
 defined('_IHINC') or die(' System files are missing! ');
 
 if (!isset($_GET['s'])) $_GET['s'] = 'step1';
@@ -42,4 +43,4 @@ if ($_GET['s'] == 'step2') {
 }
 
 /** @noinspection PhpIncludeInspection */
-include(ROOT . 'view' . DS . 'index.php');
+include(INSTALL . 'view' . DS . 'index.php');

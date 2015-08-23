@@ -18,7 +18,7 @@ $path = dirname(ROOT);
         <p>Вы успешно установили <i>Endless Monitor 3</i>.</p>
         <?php if ($type == "cron\r\n"): ?>
             <p>Задание в кроне буде иметь примерно такой вид:</p>
-            <pre>*/5 * * * * php -f <?php echo $path, DS, 'cron.php ', $serverId; ?></pre>
+            <pre>*/5 * * * * php -f <?php echo $path, 'cron.php ', $serverId; ?></pre>
         <?php else: ?>
             <p>При использовании плагина задание крону давать не нужно.</p>
         <?php endif; ?>
