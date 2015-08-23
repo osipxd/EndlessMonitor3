@@ -1,15 +1,15 @@
 <?php
 /**
  * Addon for EndlessMonitor. Online in your launcher!
- * 
- * @package EndlessMonitor
- * @version 1.0.1
- * @author OsipXD 
- * @copyright (c) 2013, Osip Fatkullin. All Rights Reserved.
- * @link http://endlessworlds.ru/
- * @license GNU/GPLv2
+ *
+ * @package       EndlessMonitor
+ * @version       1.0.1
+ * @author        OsipXD
+ * @copyright (c) 2015, Osip Fatkullin. All Rights Reserved.
+ * @link          http://endlesscode.ru/
+ * @license       GNU/GPLv2
  */
- 
+
 if (empty($_POST['server'])) {
     exit('0: Empty POST params!');
 }

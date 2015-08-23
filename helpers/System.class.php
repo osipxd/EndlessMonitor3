@@ -1,12 +1,12 @@
 <?php
 
 /**
- * @package EndlessMonitor
- * @version 1.1.3
- * @author OsipXD 
- * @copyright (c) 2013, Osip Fatkullin. All Rights Reserved.
- * @link http://endlessworlds.ru/
- * @license GNU/GPLv2
+ * @package       EndlessMonitor
+ * @version       1.1.3
+ * @author        OsipXD
+ * @copyright (c) 2015, Osip Fatkullin. All Rights Reserved.
+ * @link          http://endlesscode.ru/
+ * @license       GNU/GPLv2
  */
 defined('_EMRUN') or die(' Direct access is denied! ');
 
@@ -15,8 +15,8 @@ class System {
     /**
      * Get server status from db and prepare
      * for transmission to the template
-     * 
-     * @param   string  $serverId   Server ID in db
+     *
+     * @param   string $serverId Server ID in db
      * @return  mixed               Data for transmission to the template
      */
     public static function getInfo($serverId) {
@@ -49,10 +49,10 @@ class System {
     }
 
     /**
-     * Receiving information from the server 
+     * Receiving information from the server
      * and recorded in the database
-     * 
-     * @param   string  $serverId   Server ID in db
+     *
+     * @param   string $serverId Server ID in db
      */
     public static function serverRequest($serverId) {
         // Get config
@@ -90,8 +90,8 @@ class System {
 
     /**
      * Check the `serverId` for security
-     * 
-     * @param   string  $serverId   Server ID in db
+     *
+     * @param   string $serverId Server ID in db
      * @return  string              Checked ID
      */
     public static function secureId($serverId) {

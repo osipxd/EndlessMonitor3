@@ -1,11 +1,11 @@
 <?php
 /**
- * @package EndlessMonitor
- * @version 1.0.1
- * @author OsipXD
- * @copyright (c) 2013, Osip Fatkullin. All Rights Reserved.
- * @link http://endlessworlds.ru/
- * @license GNU/GPLv2
+ * @package       EndlessMonitor
+ * @version       1.0.1
+ * @author        OsipXD
+ * @copyright (c) 2015, Osip Fatkullin. All Rights Reserved.
+ * @link          http://endlesscode.ru/
+ * @license       GNU/GPLv2
  */
 
 define('_EMINS', true);
@@ -26,8 +26,8 @@ $page = $_GET['s'] . '.php';
 if ($_GET['s'] == 'step2') {
     if (isset($_GET['er'])) {
         $error = true;
-        Parts::delPart2(); 
-    } else Parts::part1($_POST);   
+        Parts::delPart2();
+    } else Parts::part1($_POST);
 } else if ($_GET['s'] == 'step3') {
     Parts::part2($_POST);
     PrepareSQL::prepare('table');

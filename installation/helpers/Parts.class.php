@@ -1,12 +1,12 @@
 <?php
 
 /**
- * @package EndlessMonitor
- * @version 1.2
- * @author OsipXD
- * @copyright (c) 2013, Osip Fatkullin. All Rights Reserved.
- * @link http://endlessworlds.ru/
- * @license GNU/GPLv2
+ * @package       EndlessMonitor
+ * @version       1.2
+ * @author        OsipXD
+ * @copyright (c) 2015, Osip Fatkullin. All Rights Reserved.
+ * @link          http://endlesscode.ru/
+ * @license       GNU/GPLv2
  */
 defined('_EMINS') or die(' Direct access is denied! ');
 
@@ -31,6 +31,32 @@ class Parts {
         );
 
         self::write($part, 1);
+    }
+
+    private static function write($strings, $partNum) {
+
+        if ($partNum == 1) {
+            $file = fopen(self::$path, 'w');
+        } else {
+            $file = fopen(self::$path, 'a');
+        }
+
+        if ($partNum == 2 && count(file(self::$path)) > 19) {
+            return;
+        }
+        if ($partNum == 3 && count(file(self::$path)) > 23) {
+            return;
+        }
+
+        if ($file === false) {
+            die('Не удалось создать файл');
+        }
+
+        foreach ($strings as $string) {
+            fwrite($file, $string . "\r\n");
+        }
+
+        fclose($file);
     }
 
     public static function part2($data) {
@@ -95,32 +121,6 @@ class Parts {
     public static function save() {
         copy(self::$path, '../' . 'config.ini.php');
         unlink(self::$path);
-    }
-
-    private static function write($strings, $partNum) {
-
-        if ($partNum == 1) {
-            $file = fopen(self::$path, 'w');
-        } else {
-            $file = fopen(self::$path, 'a');
-        }
-
-        if ($partNum == 2 && count(file(self::$path)) > 19) {
-            return;
-        }
-        if ($partNum == 3 && count(file(self::$path)) > 23) {
-            return;
-        }
-
-        if ($file === false) {
-            die('Не удалось создать файл');
-        }
-
-        foreach ($strings as $string) {
-            fwrite($file, $string . "\r\n");
-        }
-
-        fclose($file);
     }
 
 }

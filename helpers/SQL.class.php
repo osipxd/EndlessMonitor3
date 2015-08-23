@@ -1,12 +1,12 @@
 <?php
 
 /**
- * @package EndlessMonitor
- * @version 1.1.2
- * @author OsipXD 
- * @copyright (c) 2013, Osip Fatkullin. All Rights Reserved.
- * @link http://endlessworlds.ru/
- * @license GNU/GPLv2
+ * @package       EndlessMonitor
+ * @version       1.1.2
+ * @author        OsipXD
+ * @copyright (c) 2015, Osip Fatkullin. All Rights Reserved.
+ * @link          http://endlesscode.ru/
+ * @license       GNU/GPLv2
  */
 defined('_EMRUN') or die(' Direct access is denied! ');
 
@@ -47,8 +47,8 @@ class SQL {
 
     /**
      * Get server information from db
-     * 
-     * @param   string  $server Server name on db
+     *
+     * @param   string $server Server name on db
      * @return  bool|mixed      Server online and server max online
      */
     public function getServerInfo($server) {
@@ -58,22 +58,9 @@ class SQL {
     }
 
     /**
-     * Set online value for server
-     * 
-     * @param   string  $server     Server name in db
-     * @param   string  $type       Online or max online
-     * @param   int     $value      Online value
-     */
-    public function setOnline($server, $type, $value = -1) {
-        $query = "UPDATE `$this->table` SET $type = $value WHERE server = '$server'";
-
-        $this->sendQuery($query);
-    }
-
-    /**
      * Send MySQLi query and get result
-     * 
-     * @param   string  $query  Query
+     *
+     * @param   string $query Query
      * @return  bool|mixed      Result of MySQLi query
      */
     public function sendQuery($query) {
@@ -83,6 +70,19 @@ class SQL {
             return $res;
         }
         return $res->fetch_assoc();
+    }
+
+    /**
+     * Set online value for server
+     *
+     * @param   string $server Server name in db
+     * @param   string $type   Online or max online
+     * @param   int    $value  Online value
+     */
+    public function setOnline($server, $type, $value = -1) {
+        $query = "UPDATE `$this->table` SET $type = $value WHERE server = '$server'";
+
+        $this->sendQuery($query);
     }
 
     /**

@@ -19,10 +19,10 @@ class MinecraftQurey {
 
         $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 
-        socket_set_option($socket, SOL_SOCKET, SO_SNDTIMEO, array('sec' => (int) $timeout, 'usec' => 0));
-        socket_set_option($socket, SOL_SOCKET, SO_RCVTIMEO, array('sec' => (int) $timeout, 'usec' => 0));
+        socket_set_option($socket, SOL_SOCKET, SO_SNDTIMEO, array('sec' => (int)$timeout, 'usec' => 0));
+        socket_set_option($socket, SOL_SOCKET, SO_RCVTIMEO, array('sec' => (int)$timeout, 'usec' => 0));
 
-        if ($socket === FALSE || @socket_connect($socket, $ip, (int) $port) === FALSE) {
+        if ($socket === FALSE || @socket_connect($socket, $ip, (int)$port) === FALSE) {
             return FALSE;
         }
 
