@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @package       EndlessMonitor
  * @version       1.0
@@ -7,7 +8,6 @@
  * @link          http://endlesscode.ru/
  * @license       GNU/GPLv2
  */
-
 if (empty($_GET['server'])) {
     die(' Empty params! ');
 }
@@ -23,8 +23,14 @@ if (!file_exists('config.ini.php')) {
 
 require_once(ROOT . 'helpers/include.php');
 defined('_HINC') or die(' System files are missing! ');
+$info = '';
 
-$info = System::getInfo(System::secureId($_GET['server']));
+if ($_GET['demo'] == 'true') {
+    $info = System::getDemoInfo(System::secureId($_GET['server']));
+} else {
+    $info = System::getInfo(System::secureId($_GET['server']));
+}
+
 
 /** @noinspection PhpIncludeInspection */
 include(ROOT . 'tmpl/' . Config::get('system.template') . '.php');
