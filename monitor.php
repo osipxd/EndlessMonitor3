@@ -24,13 +24,16 @@ if (!file_exists('config.ini.php')) {
 require_once(ROOT . 'helpers/include.php');
 defined('_HINC') or die(' System files are missing! ');
 $info = '';
-
+$tmploptions = '';
 if ($_GET['demo'] == 'true') {
     $info = System::getDemoInfo(System::secureId($_GET['server']));
 } else {
     $info = System::getInfo(System::secureId($_GET['server']));
 }
 
+if ($_GET['to'] != null ) {
+    $tmploptions = $_GET['to'];
+}
 
 /** @noinspection PhpIncludeInspection */
 include(ROOT . 'tmpl/' . Config::get('system.template') . '.php');
