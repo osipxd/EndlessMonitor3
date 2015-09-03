@@ -15,7 +15,7 @@ defined('_EMRUN') or die(' Direct access is denied! ');
         <link rel="stylesheet" href="tmpl/css/default.css">
         <style type="text/css">
             .online span {
-                background-color: <?php $tmploptions != '' ? $tmploptions : '#34c2e3' ?> ;
+                background-color: #<?php echo $tmploptions != '' ? $tmploptions : '34c2e3' ?>;
             }
         </style>
     </head>

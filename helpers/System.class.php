@@ -48,27 +48,17 @@ class System {
         return $info;
     }
     
-    
+    /**
+     * Demo output.
+     * 
+     * @param String $serverId
+     * @return string
+     */
     public static function getDemoInfo($serverId) {
-        // Get config
-        $config = new Config();
-        $serverSettings = $config->get("servers.$serverId");
-
-        // Prepare the data for transmission to the template
-        $info['text'] = $serverSettings['text'];
-        if (true) {
-            $info['percent'] = rand(0, 100);
-            $info['status'] = ($config->get('style.status') == 1) ? $info['percent'] . '%' : $info['percent'];
-            if ($config->get('style.status') == 2) {
-                $info['status'] .= '/100';
-            }
-            $info['style'] = 'online';
-        } else {
-            $info['percent'] = 100;
-            $info['status'] = Lang::getLocaledString('OFFLINE');
-            $info['style'] = 'offline';
-        }
-
+        $info['text'] = $serverId;
+        $info['percent'] = rand(0, 100);
+        $info['status'] = $info['percent'] . '%';
+        $info['style'] = 'online';
         return $info;
     }
 

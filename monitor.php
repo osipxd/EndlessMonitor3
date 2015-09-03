@@ -16,24 +16,26 @@ define('_EMRUN', true);
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', dirname(__FILE__) . DS);
 
-if (!file_exists('config.ini.php')) {
-    include(ROOT . 'installation/index.php');
-    die;
-}
-
 require_once(ROOT . 'helpers/include.php');
 defined('_HINC') or die(' System files are missing! ');
 $info = '';
 $tmploptions = '';
-if ($_GET['demo'] == 'true') {
-    $info = System::getDemoInfo(System::secureId($_GET['server']));
-} else {
-    $info = System::getInfo(System::secureId($_GET['server']));
-}
 
-if ($_GET['to'] != null ) {
+if (!empty($_GET['to'])) {
     $tmploptions = $_GET['to'];
 }
+
+if ($_GET['demo'] == 'true') {
+    $info = System::getDemoInfo($_GET['server']);
+    include(ROOT . 'tmpl/default.php');
+    die;
+}
+
+if (!file_exists('config.ini.php')) {
+    include(ROOT . 'installation/index.php');
+    die;
+}
+$info = System::getInfo(System::secureId($_GET['server']));
 
 /** @noinspection PhpIncludeInspection */
 include(ROOT . 'tmpl/' . Config::get('system.template') . '.php');
