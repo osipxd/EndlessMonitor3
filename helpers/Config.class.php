@@ -23,7 +23,7 @@ class Config {
             die(Lang::getLocaledStringFromLocale('CONFIG_NOT_FOUND_ERROR', 'ru_RU'));
         }
 
-        $config = parse_ini_file(ROOT . $file, true);
+        $config = parse_ini_file(/*ROOT . */$file, true);
 
         // Prepare section
         $sections = self::parse($section);

@@ -36,7 +36,7 @@ class SQL {
         $this->table = $opt['table'];
 
         // Connect to MySQL
-        @$this->sql = new mysqli($opt['host'], $opt['user'], $opt['pass'], $opt['db'], $opt['port']);
+        $this->sql = new mysqli($opt['host'], $opt['user'], $opt['pass'], $opt['db'], $opt['port']);
         unset($opt);
 
         // Output error

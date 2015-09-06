@@ -25,14 +25,14 @@ if (!empty($_GET['to'])) {
     $tmploptions = $_GET['to'];
 }
 
-if ($_GET['demo'] == 'true') {
+if (!empty($_GET['demo'])) {
     $info = System::getDemoInfo($_GET['server']);
     include(ROOT . 'tmpl/default.php');
     die;
 }
 
 if (!file_exists('config.ini.php')) {
-    include(ROOT . 'installation/index.php');
+    echo('Configuration doesn\'t exists.');
     die;
 }
 $info = System::getInfo(System::secureId($_GET['server']));
