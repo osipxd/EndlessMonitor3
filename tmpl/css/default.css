@@ -30,10 +30,6 @@
     transition: width .4s ease-in-out;
 }
 
-.online span {
-    background-color: #34c2e3;
-}
-
 .offline span {
     background-color: #727272;
 }

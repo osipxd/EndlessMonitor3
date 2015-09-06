@@ -47,6 +47,20 @@ class System {
 
         return $info;
     }
+    
+    /**
+     * Demo output.
+     * 
+     * @param String $serverId
+     * @return string
+     */
+    public static function getDemoInfo($serverId) {
+        $info['text'] = $serverId;
+        $info['percent'] = rand(0, 100);
+        $info['status'] = $info['percent'] . '%';
+        $info['style'] = 'online';
+        return $info;
+    }
 
     /**
      * Receiving information from the server

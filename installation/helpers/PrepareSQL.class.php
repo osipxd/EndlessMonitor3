@@ -18,8 +18,6 @@ class PrepareSQL {
      * $param   string  $type   Type of request (table or server)
      */
     public static function prepare($type, $serverId = null) {
-        global $error;
-
         $sql = new SQL();
         $table = Config::get('mysql.table');
 
