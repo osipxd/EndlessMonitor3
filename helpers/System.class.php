@@ -32,11 +32,11 @@ class System {
 
         // Prepare the data for transmission to the template
         $info['text'] = $serverSettings['text'];
-        if ($server !== false && ($server['online'] > -1 && $server['max_online'] != 0)) {
-            $info['percent'] = ($server['online'] >= $server['max_online']) ? 100 : $server['online'] / $server['max_online'] * 100;
+        if ($server !== false && ($server['online'] > -1 && $server['capacity'] > -1)) {
+            $info['percent'] = ($server['online'] >= $server['capacity']) ? 100 : $server['online'] / $server['capacity'] * 100;
             $info['status'] = ($config->get('style.status') == 1) ? $info['percent'] . '%' : $server['online'];
             if ($config->get('style.status') == 2) {
-                $info['status'] .= '/' . $server['max_online'];
+                $info['status'] .= '/' . $server['capacity'];
             }
             $info['style'] = 'online';
         } else {
@@ -99,7 +99,7 @@ class System {
 
         // Record status to db
         $sql->setOnline($serverId, 'online', $res['Players']);
-        $sql->setOnline($serverId, 'max_online', $res['MaxPlayers']);
+        $sql->setOnline($serverId, 'capacity', $res['MaxPlayers']);
     }
 
     /**
